@@ -1,23 +1,20 @@
-const express = require('express');
-const productsRouter = require('./routes/products');
-const cartsRouter = require('./routes/carts');
+//Desarrollar un servidor express que, en su archivo app.js importe al archivo de productManager.
 
-const app = express();
-const PORT = 8080;
+const express = require("express"); 
+const productRouter = require("./routes/products.router.js");
+//const cartRouter = require("./routes/carts.router.js");
+const app = express(); 
+const PUERTO = 8080;
 
-// Middleware para parsear el cuerpo de las solicitudes como JSON
-app.use(express.json());
+//Middleware: 
+app.use(express.json()); 
+//Le decimos al servidor que vamos a trabajar con JSON. 
 
-// Rutas
-app.use('/api/products', productsRouter);
-app.use('/api/carts', cartsRouter);
+//Rutas
+app.use("/api/products", productRouter);
+//app.use("/api/carts", cartRouter);
 
-// Ruta raíz
-app.get('/', (req, res) => {
-  res.redirect('/api/products');
-});
 
-// Escucha del servidor
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.listen(PUERTO, () => {
+    console.log(`Escuchando en el http://localhost:${PUERTO}`); 
+})
