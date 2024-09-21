@@ -29,7 +29,7 @@ class ProductManager {
         
 
         if (this.products.some(item => item.code === code)) {
-            console.log("El codigo debe ser unico.. o todos moriremos");
+            console.log("El codigo debe ser unico. Error en addProduct");
             return;
         }
 
