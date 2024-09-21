@@ -6,14 +6,25 @@ const productsFilePath = path.join(__dirname, '../data/productos.json');
 
 // Obtener todos los productos
 router.get('/', (req, res) => {
-  const limit = req.query.limit;
-  fs.readFile(productsFilePath, 'utf-8', (err, data) => {
-    if (err) return res.status(500).json({ error: 'Error al leer el archivo de productos' });
-    let products = JSON.parse(data);
-    if (limit) products = products.slice(0, limit);
-    res.json(products);
+    fs.readFile(productsFilePath, 'utf-8', (err, data) => {
+      if (err) return res.status(500).json({ error: 'Error al leer el archivo de productos' });
+      
+      // Manejar archivo vacío o malformado
+      let products = [];
+      if (data) {
+        try {
+          products = JSON.parse(data);  // Intenta parsear el JSON
+        } catch (e) {
+          return res.status(500).json({ error: 'Archivo JSON malformado' });
+        }
+      }
+  
+      const limit = req.query.limit;
+      if (limit) products = products.slice(0, limit);
+      res.json(products);
+    });
   });
-});
+  
 
 // Obtener un producto por ID
 router.get('/:pid', (req, res) => {

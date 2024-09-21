@@ -12,6 +12,11 @@ app.use(express.json());
 app.use('/api/products', productsRouter);
 app.use('/api/carts', cartsRouter);
 
+// Ruta raíz
+app.get('/', (req, res) => {
+  res.redirect('/api/products');
+});
+
 // Escucha del servidor
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
