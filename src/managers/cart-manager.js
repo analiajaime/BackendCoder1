@@ -17,7 +17,7 @@ class CartManager {
                 this.ultId = Math.max(...this.carts.map(cart => cart.id));
             }
         } catch (error) {
-            console.log("Error al cargar el carrito");
+            console.log("Error al cargar el carrito. Ver CartManager", error);
             await this.guardarCarritos();
         }
     }
