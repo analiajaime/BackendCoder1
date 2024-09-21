@@ -1,110 +1,110 @@
 [
   {
     "id": 1,
-    "title": "Arroz",
-    "description": "Marolio",
-    "price": 20,
+    "title": "Alimento para Perros",
+    "description": "Alimento balanceado para perros adultos",
+    "price": 1500,
     "img": "sin imagen",
-    "code": "abc555",
-    "stock": 33
+    "code": "dog001",
+    "stock": 50
   },
   {
     "id": 2,
-    "title": "Azúcar",
-    "description": "Ledesma",
-    "price": 150,
+    "title": "Alimento para Gatos",
+    "description": "Alimento balanceado para gatos adultos",
+    "price": 1200,
     "img": "sin imagen",
-    "code": "def456",
-    "stock": 30
-  },
-  {
-    "id": 3,
-    "title": "Harina",
-    "description": "Blanco",
-    "price": 180,
-    "img": "sin imagen",
-    "code": "ghi789",
-    "stock": 20
-  },
-  {
-    "id": 4,
-    "title": "Aceite",
-    "description": "Saboroso",
-    "price": 350,
-    "img": "sin imagen",
-    "code": "jkl012",
-    "stock": 15
-  },
-  {
-    "id": 5,
-    "title": "Leche",
-    "description": "La Serenísima",
-    "price": 120,
-    "img": "sin imagen",
-    "code": "mno345",
+    "code": "cat001",
     "stock": 40
   },
   {
-    "id": 6,
-    "title": "Galletitas",
-    "description": "Tend to be sweet",
-    "price": 250,
+    "id": 3,
+    "title": "Juguete para Perros",
+    "description": "Pelota de goma resistente",
+    "price": 300,
     "img": "sin imagen",
-    "code": "pqr678",
-    "stock": 22
+    "code": "toy001",
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "title": "Rascador para Gatos",
+    "description": "Rascador de cartón para gatos",
+    "price": 700,
+    "img": "sin imagen",
+    "code": "cat002",
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "title": "Casita para Perros",
+    "description": "Casa de plástico resistente para perros medianos",
+    "price": 4500,
+    "img": "sin imagen",
+    "code": "dog002",
+    "stock": 10
+  },
+  {
+    "id": 6,
+    "title": "Arena para Gatos",
+    "description": "Arena aglomerante para gatos",
+    "price": 500,
+    "img": "sin imagen",
+    "code": "cat003",
+    "stock": 70
   },
   {
     "id": 7,
-    "title": "Tomates",
-    "description": "En bolsa",
-    "price": 90,
+    "title": "Correa para Perros",
+    "description": "Correa de nylon para perros grandes",
+    "price": 400,
     "img": "sin imagen",
-    "code": "stu901",
-    "stock": 35
+    "code": "dog003",
+    "stock": 60
   },
   {
     "id": 8,
-    "title": "Cereal",
-    "description": "Nestlé",
-    "price": 400,
+    "title": "Alimento para Peces",
+    "description": "Alimento en hojuelas para peces tropicales",
+    "price": 200,
     "img": "sin imagen",
-    "code": "vwx234",
-    "stock": 18
+    "code": "fish001",
+    "stock": 80
   },
   {
     "id": 9,
-    "title": "Pasta",
-    "description": "Migliore",
-    "price": 170,
+    "title": "Comedero para Mascotas",
+    "description": "Comedero de acero inoxidable",
+    "price": 350,
     "img": "sin imagen",
-    "code": "yz1234",
-    "stock": 28
+    "code": "acc001",
+    "stock": 120
   },
   {
     "id": 10,
-    "title": "Jugo",
-    "description": "Del Valle",
-    "price": 220,
+    "title": "Transportadora para Gatos",
+    "description": "Transportadora de plástico para gatos y perros pequeños",
+    "price": 2500,
     "img": "sin imagen",
-    "code": "abc567",
-    "stock": 33
+    "code": "cat004",
+    "stock": 15
   },
   {
     "id": 11,
-    "title": "Helado",
-    "description": "De Menta granizada",
-    "price": 5000,
+    "title": "Collar para Perros",
+    "description": "Collar ajustable para perros medianos",
+    "price": 350,
     "img": "sin imagen",
-    "code": "aaa558",
-    "stock": 300
+    "code": "dog004",
+    "stock": 45
   },
   {
     "id": 12,
-    "title": "Fideos",
-    "description": "Marolio",
-    "price": 1000,
+    "title": "Juguete para Gatos",
+    "description": "Ratón de juguete con catnip",
+    "price": 150,
     "img": "sin imagen",
-    "code": "aaa559",
-    "stock": 300
+    "code": "cat005",
+    "stock": 70
   }
 ]

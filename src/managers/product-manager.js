@@ -26,7 +26,7 @@ class ProductManager {
             return;
         }
 
-        //2) Validacion: 
+        
 
         if (this.products.some(item => item.code === code)) {
             console.log("El codigo debe ser unico.. o todos moriremos");
@@ -44,10 +44,10 @@ class ProductManager {
             stock
         };
 
-        //4) Metemos el producto al array. 
+        
         this.products.push(nuevoProducto);
 
-        //5) Lo guardamos en el archivo: 
+       
         await this.guardarArchivo(this.products);
     }
 
@@ -56,7 +56,7 @@ class ProductManager {
             const arrayProductos = await this.leerArchivo(); 
             return arrayProductos;
         } catch (error) {
-            console.log("Error al leer el archivo", error); 
+            console.log("Error al leer el archivo. Ver product-manager", error); 
         }
 
     }
@@ -74,11 +74,11 @@ class ProductManager {
                 return buscado; 
             }
         } catch (error) {
-            console.log("Error al buscar por id", error); 
+            console.log("Error al buscar por ID", error); 
         }
     }
 
-    //Métodos auxiliares: 
+    
     async leerArchivo() {
         const respuesta = await fs.readFile(this.path, "utf-8");
         const arrayProductos = JSON.parse(respuesta);
@@ -89,7 +89,6 @@ class ProductManager {
         await fs.writeFile(this.path, JSON.stringify(arrayProductos, null, 2));
     }
 
-    //Método para actualizar productos: 
 
     async updateProduct(id, productoActualizado) {
         try {
@@ -105,7 +104,7 @@ class ProductManager {
                 console.log("No se encuentra el producto"); 
             }
         } catch (error) {
-            console.log("Tenemos un error al actualizar productos"); 
+            console.log("Error al actualizar productos"); 
         }
     }
 
@@ -123,7 +122,7 @@ class ProductManager {
                 console.log("No se encuentra el producto"); 
             }
         } catch (error) {
-            console.log("Tenemos un error al eliminar productos"); 
+            console.log("Error al eliminar productos"); 
         }
     }
 
